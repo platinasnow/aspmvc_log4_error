@@ -44,33 +44,6 @@ namespace WebApplication2
                 Response.Redirect("/Home/Error500");
             }
 
-
-            
-
-
-            /*
-            if (null != serverError)
-            {
-                int errorCode = serverError.GetHttpCode();
-
-                if (404 == errorCode)
-                {
-                    Server.ClearError();
-                    Response.Redirect("/Home/Error500");
-                }
-                else
-                {
-                    logger.Error(exception.ToString());
-                    Debug.WriteLine("exception.GetBaseException() :" + exception.GetBaseException());
-                    Debug.WriteLine("exception.Message() :" + exception.Message);
-                    Debug.WriteLine("exception.Source() :" + exception.Source);
-                    Debug.WriteLine("exception.StackTrace() :" + exception.StackTrace);
-                    Server.ClearError();
-                    Response.Redirect("/Home/Error500");
-                }
-            }
-            */
-
         }
     }
 }
